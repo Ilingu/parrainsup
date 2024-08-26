@@ -10,6 +10,13 @@
 		!
 	</p>
 	<p />
+	<h2>Illustrations des genres</h2>
+	<ul>
+		{#each [ 'Masculin : ♂', 'Féminin : ♀', 'Trans : ⚧', 'Non-binaire : 👽', 'Agenre : 🚫', 'Questionning : ❓' ] as gender}
+			<li>{gender}</li>
+		{/each}
+	</ul>
+	<h2>Remerciements</h2>
 	<p>
 		Merci à <a href="https://github.com/HiiGHoVuTi">Juliette</a> de m'avoir laissé reprendre son code, et à nos parrains, notamment Kenza et Solène, qui ont imaginé les questions du sondage.
 		<br />
