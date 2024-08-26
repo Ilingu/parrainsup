@@ -14,7 +14,7 @@
 
 		<div class="boxes-item_title">
 			{parrain.prénom +
-				(parrain.surnom ? ' «' + parrain.surnom + '»' : '') +
+				(parrain.surnom ? ' « ' + parrain.surnom + ' »' : '') +
 				' ' +
 				parrain.nom.toUpperCase() +
 				(genresIllustrés[parrain.genre]

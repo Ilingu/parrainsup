@@ -105,3 +105,14 @@ button:focus:not(:focus-visible) {
 	width: 1px;
 	white-space: nowrap;
 }
+
+.section {
+	text-align: center;
+	font-weight: bold;
+}
+
+.gender-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
