@@ -11,13 +11,8 @@
 	</p>
 	<p />
 	<p>
-		Un petit groupe présidé par Kenza et Solène s'est occupé du sondage, et Maxime a construit ce
-		site.
+		Merci à <a href="https://github.com/HiiGHoVuTi">Juliette</a> de m'avoir laissé reprendre son code, et à nos parrains, notamment Kenza et Solène, qui ont imaginé les questions du sondage.
+		<br />
+		Et enfin, merci à Arthur d'avoir fait du débugage pour permettre au site d'être déployé !
 	</p>
-	<p>Merci à:</p>
-	<ul>
-		{#each ['Kenza', 'Solène', 'Maxime', 'Lucie', 'Cydony', 'Camille', 'Milan', 'Gabriel', 'Léo', 'Lucas', 'Raphaël'] as name}
-			<li>{name}</li>
-		{/each}
-	</ul>
 </div>

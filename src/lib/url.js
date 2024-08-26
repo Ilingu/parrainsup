@@ -1,1 +1,1 @@
-export default 'https://pastebin.com/raw/54qWZJrV';
+export default 'https://pastebin.com/raw/EHRnpqpR';
