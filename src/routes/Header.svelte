@@ -32,7 +32,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/HiiGHoVuTi/parrainsup">
+		<a href="https://framagit.org/Neutrino/parrainsup">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
