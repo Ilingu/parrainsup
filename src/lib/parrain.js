@@ -2,6 +2,14 @@ import url from '$lib/url.js';
 import Papa from 'papaparse';
 
 export const genresIllustrés = { M: '♂', F: '♀', T: '⚧', NB: '👽', A: '🚫', Qu: '❓' };
+export const genresText = {
+	M: 'Masculin',
+	F: 'Féminin',
+	T: 'Trans',
+	NB: 'Non-binaire',
+	A: 'Agenre',
+	Qu: 'Questionning'
+};
 
 export async function getData() {
 	const res = await fetch(url);

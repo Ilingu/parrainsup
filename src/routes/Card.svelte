@@ -1,6 +1,6 @@
 <script>
 	export let parrain;
-	import { genresIllustrés } from '$lib/parrain.js';
+	import { genresIllustrés, genresText } from '$lib/parrain.js';
 
 	const crop = (p, len) => (p.length <= len ? p : p.slice(0, len) + '[…]');
 </script>
@@ -16,10 +16,12 @@
 			{parrain.prénom +
 				(parrain.surnom ? ' « ' + parrain.surnom + ' »' : '') +
 				' ' +
-				parrain.nom.toUpperCase() +
-				(genresIllustrés[parrain.genre]
+				parrain.nom.toUpperCase()}
+			<span title={genresText[parrain.genre] || parrain.genre}>
+				{genresIllustrés[parrain.genre]
 					? ' ' + genresIllustrés[parrain.genre]
-					: ', ' + parrain.genre)}
+					: ', ' + parrain.genre}
+			</span>
 		</div>
 
 		<p class="boxes-item_field-box">

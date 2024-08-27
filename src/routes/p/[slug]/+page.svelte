@@ -2,7 +2,7 @@
 	export let data;
 	const { parrain } = data;
 
-	import { genresIllustrés } from '$lib/parrain.js';
+	import { genresIllustrés, genresText } from '$lib/parrain.js';
 </script>
 
 <svelte:head>
@@ -12,10 +12,10 @@
 
 <div class="profile">
 	<div class="name">
-		{parrain.prénom +
-			(genresIllustrés[parrain.genre]
-				? ' ' + genresIllustrés[parrain.genre]
-				: `, ${parrain.genre}`)}
+		{parrain.prénom}
+		<span title={genresText[parrain.genre] || parrain.genre}>
+			{genresIllustrés[parrain.genre] ? ' ' + genresIllustrés[parrain.genre] : `, ${parrain.genre}`}
+		</span>
 	</div>
 	<div class="nickname">{parrain.surnom}</div>
 	<div class="anecdotes">
