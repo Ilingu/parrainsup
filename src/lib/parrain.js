@@ -9,7 +9,7 @@ export const genresText = {
 	NB: 'Non-binaire',
 	A: 'Agenre',
 	Qu: 'Questionning',
-	D: 'Pingouin-gender'
+	D: 'Dodu-gender'
 };
 
 export async function getData() {

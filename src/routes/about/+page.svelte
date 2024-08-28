@@ -12,7 +12,7 @@
 	<p />
 	<h2 class="section">Illustrations des genres</h2>
 	<ul class="gender-grid">
-		{#each ['Masculin : ♂', 'Féminin : ♀', 'Trans : ⚧', 'Non-binaire : 👽', 'Agenre : 🚫', 'Questionning : ❓', 'Pingouin-gender : 🐧'] as gender}
+		{#each ['Masculin : ♂', 'Féminin : ♀', 'Trans : ⚧', 'Non-binaire : 👽', 'Agenre : 🚫', 'Questionning : ❓'] as gender}
 			<li>{gender}</li>
 		{/each}
 	</ul>
