@@ -1,11 +1,12 @@
 <script>
 	export let parrain;
 	import { genresIllustrés, genresText } from '$lib/parrain.js';
+	import { getLuminance } from '$lib/luminance.js';
 
 	const crop = (p, len) => (p.length <= len ? p : p.slice(0, len) + '[…]');
 </script>
 
-<div class="boxes_item">
+<div class={`boxes_item${getLuminance(parrain.couleur) > 0.5 ? ' inverted' : ''}`}>
 	<a href={'/p/' + parrain.nom} class="boxes-item_link">
 		<div
 			class="boxes-item_bg"
@@ -37,7 +38,6 @@
 				</span>
 			</div>
 		{/if}
-
 		{#if parrain.team}
 			<div class="boxes-item_field-box">
 				Team:
@@ -60,6 +60,27 @@
 
 		border-radius: 28px;
 	}
+	.boxes_item.inverted .boxes-item_title {
+		transition: all 0.7s;
+	}
+	.boxes_item.inverted:hover .boxes-item_title {
+		color: #000000;
+	}
+
+	.boxes_item.inverted .boxes-item_field-box {
+		transition: all 0.7s;
+	}
+	.boxes_item.inverted:hover .boxes-item_field-box {
+		color: #000000;
+	}
+
+	.boxes_item.inverted .boxes-item_field {
+		transition: all 0.7s;
+	}
+	.boxes_item.inverted:hover .boxes-item_field {
+		color: #000000;
+	}
+
 	.boxes-item_link {
 		display: block;
 		padding: 30px 20px;
@@ -92,6 +113,7 @@
 		z-index: 2;
 		position: relative;
 	}
+
 	.boxes-item_field-box {
 		font-size: 18px;
 		color: #fff;
