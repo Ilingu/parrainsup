@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import dodu from '$lib/images/dodu.svg';
-	import framagit from '$lib/images/framagit.svg';
+	import framagit from '$lib/images/framagit.webp';
 </script>
 
 <header>
@@ -33,7 +33,7 @@
 
 	<div class="corner">
 		<a href="https://framagit.org/Neutrino/parrainsup">
-			<img src={framagit} alt="GitHub" />
+			<img src={framagit} alt="framagit" />
 		</a>
 	</div>
 </header>
