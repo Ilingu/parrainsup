@@ -23,7 +23,7 @@ export async function getData() {
 
 export function fromArray(arr) {
 	return {
-		image: arr[3],
+		team_c_ocaml: arr[3],
 		nom: arr[0].split(' ').slice(1).join(' '),
 		prénom: arr[0].split(' ')[0],
 		surnom: arr[2],
@@ -34,7 +34,7 @@ export function fromArray(arr) {
 		anecdote: arr[7],
 		vœu: arr[8],
 		bizuth: arr[9],
-		team: arr[10],
+		team_algebre_analyse: arr[10],
 		couleur: arr[11]
 	};
 }

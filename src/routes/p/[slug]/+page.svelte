@@ -35,9 +35,13 @@
 			<h3>Une anecdote sur ton année ?</h3>
 			<p>{parrain.anecdote}</p>
 		{/if}
-		{#if parrain.team}
+		{#if parrain.team_algebre_analyse}
 			<h3>Algèbre ou Analyse ?</h3>
-			<p>{parrain.team}</p>
+			<p>{parrain.team_algebre_analyse}</p>
+		{/if}
+		{#if parrain.team_c_ocaml}
+			<h3>OCaml ou C ?</h3>
+			<p>{parrain.team_c_ocaml}</p>
 		{/if}
 		{#if parrain.bizuth}
 			<h3>Un message pour les bizuths ?</h3>

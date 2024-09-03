@@ -38,11 +38,19 @@
 				</span>
 			</div>
 		{/if}
-		{#if parrain.team}
+		{#if parrain.team_algebre_analyse}
 			<div class="boxes-item_field-box">
 				Team:
 				<span class="boxes-item_field">
-					{crop(parrain.team, 180)}
+					{crop(parrain.team_algebre_analyse, 180)}
+				</span>
+			</div>
+		{/if}
+		{#if parrain.team_c_ocaml}
+			<div class="boxes-item_field-box">
+				Team:
+				<span class="boxes-item_field">
+					{crop(parrain.team_c_ocaml, 180)}
 				</span>
 			</div>
 		{/if}
