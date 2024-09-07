@@ -32,23 +32,33 @@
 
 		{#if parrain.vœu}
 			<div class="boxes-item_field-box">
-				<bold> Vœu: </bold>
+				<bold> Vœu : </bold>
 				<span class="boxes-item_field">
 					{crop(parrain.vœu, 180)}
 				</span>
 			</div>
 		{/if}
-		{#if parrain.team_algebre_analyse}
+		{#if parrain.team_algebre_analyse && parrain.team_c_ocaml}
 			<div class="boxes-item_field-box">
-				Team:
+				Team :
+				<span class="boxes-item_field">
+					{crop(parrain.team_algebre_analyse, 180)}
+				</span>
+				et
+				<span class="boxes-item_field">
+					{crop(parrain.team_c_ocaml, 180)}
+				</span>
+			</div>
+		{:else if parrain.team_algebre_analyse}
+			<div class="boxes-item_field-box">
+				Team :
 				<span class="boxes-item_field">
 					{crop(parrain.team_algebre_analyse, 180)}
 				</span>
 			</div>
-		{/if}
-		{#if parrain.team_c_ocaml}
+		{:else if parrain.team_c_ocaml}
 			<div class="boxes-item_field-box">
-				Team:
+				Team :
 				<span class="boxes-item_field">
 					{crop(parrain.team_c_ocaml, 180)}
 				</span>

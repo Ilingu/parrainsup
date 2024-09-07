@@ -24,7 +24,7 @@
 		<slot />
 	</main>
 
-	<footer>Fait avec amour par vos parrains et grands parrains 💖</footer>
+	<footer><span title="💖">Fait avec amour par vos parrains et grands parrains 💖</span></footer>
 </div>
 
 <style>

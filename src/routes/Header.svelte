@@ -17,13 +17,13 @@
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">🏠</a>
+				<a href="/" title="Accueil">🏠</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/r' ? 'page' : undefined}>
-				<a href="/r">🎲</a>
+				<a href="/r" title="Un parrain au hasard">🎲</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">À propos</a>
+				<a href="/about" title="À propos">À propos</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -32,7 +32,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://framagit.org/Neutrino/parrainsup">
+		<a href="https://framagit.org/Neutrino/parrainsup" title="Code source">
 			<img src={framagit} alt="framagit" />
 		</a>
 	</div>

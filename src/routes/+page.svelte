@@ -15,7 +15,7 @@
 </svelte:head>
 
 <section>
-	<h1>Bienvenue ! Voici {data.parrains.length} de vos parrains</h1>
+	<h1>Bienvenue, voici {data.parrains.length} de vos parrains !</h1>
 
 	<form class="px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md">
 		<div class="mb-4">
@@ -51,7 +51,7 @@
 	}
 
 	.format-container {
-		width: 1142px;
+		width: 100%;
 		margin: 0 auto;
 	}
 
@@ -59,6 +59,7 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		width: 100%;
 		-webkit-box-align: start;
 		-ms-flex-align: start;
 		align-items: flex-start;
