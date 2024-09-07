@@ -69,8 +69,8 @@
 
 <style>
 	.boxes_item {
-		-ms-flex-preferred-size: calc(33.33333% - 30px);
-		flex-basis: calc(33.33333% - 30px);
+		-ms-flex-preferred-size: calc(50% - 30px);
+		flex-basis: calc(50% - 30px);
 
 		margin: 0 15px 30px;
 
